@@ -12,6 +12,7 @@ You will also need the following libraries:
 # Start-up
 Before we run any code we need to clone the following repo:
 - https://github.com/kb22/Create-Face-Data-from-Images
+
 You will need this to convert images created from slice.py 
 into new images, that only consist of a face.
 
