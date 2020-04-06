@@ -4,7 +4,10 @@ import cv2
 
 import os
 
+import os
 
+if not os.path.exists('crop_faces'):
+    os.makedirs('crop_faces')
 
 detector= cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
