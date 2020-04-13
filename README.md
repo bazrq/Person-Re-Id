@@ -22,6 +22,16 @@ we must then add front shot images with variation to that person. Now you are re
 3. run face_extractor.py
 4. run re-id.py
 
+# Citations
+This project and its code is sourced from open source software. 
+Please visit the following Github page and website, as the work done there heavily allowed us to 
+complete this task. 
+
+https://pythonprogramming.net/facial-recognition-python/
+
+https://pythonprogramming.net/facial-recognition-python/
+
+
 
 
 
