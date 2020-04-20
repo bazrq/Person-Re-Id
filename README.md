@@ -2,8 +2,7 @@
 This repo is to house code and knowledge base to complete the problem of Person Re-Identification, which was chosen as a final year engineering project.
 
 # Requirements
-- linux (preferably)
-- Windows
+- linux Ubuntu 18.4 LTS
 
 Install the requirements file and do the following:
 - sudo pip3.7 install --upgrade numpy scipy
