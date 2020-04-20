@@ -14,13 +14,19 @@ Install the requirements file and do the following:
 - pip install git+https://github.com/ageitgey/face_recognition_models
 
 # Start-up
-Before we do anything, we must make a folder in known_faces for anyone we want to find. After making a folder for said person
-we must then add front shot images with variation to that person. Now you are ready to go, follow the instructions:
+Build Database:
+1. Slice video feed into images. run slicer.py and select any mp4 of your choice. 
+NOTE: Video dir must be made.
+3. Run data_generator.py to draw bounding boxes around every face in step 1.
+4. Run face_extractor.py to crop faces and save them in unknown_faces dir.
+5. Run face_clusters.py to cluster all faces in unknown_faces dir, and make database.
 
-1. Slice video feed into .JPG files by editing the slicer.py file -> vidcap = cv2.VideoCapture("./vidoes/*SOMEVIDEO*.mp4")
-2. run data_generator.py
-3. run face_extractor.py
-4. run re-id.py
+Find Missing People:
+1. Clear the unknown_faces dir.
+2. Slice video feed into images. run slicer.py and select any mp4 of your choice.
+3. Run data_generator.py to draw bounding boxes around every face in step 2.
+4. Run face_extractor.py to crop faces and save them in unknown_faces dir.
+5. Run re-id.py to see if there is a match for unknown_faces and anyone in known_faces
 
 # Citations
 This project and its code is sourced from open source software. 
