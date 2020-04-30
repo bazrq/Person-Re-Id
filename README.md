@@ -13,6 +13,7 @@ Install the requirements file and do the following:
 - pip install git+https://github.com/ageitgey/face_recognition_models
 
 # Start-up
+Ensure that vidoe files of your choice are placed in the VIDEOS dir.
 1. Run build_database.py. 
 2. Run find_match.py.
 
