@@ -14,18 +14,12 @@ Install the requirements file and do the following:
 
 # Start-up
 Build Database:
-1. Slice video feed into images. run slicer.py and select any mp4 of your choice. 
-NOTE: Video dir must be made.
-3. Run data_generator.py to draw bounding boxes around every face in step 1.
-4. Run face_extractor.py to crop faces and save them in unknown_faces dir.
-5. Run face_clusters.py to cluster all faces in unknown_faces dir, and make database.
+1. Run build_database.py. 
+
 
 Find Missing People:
-1. Clear the unknown_faces dir.
-2. Slice video feed into images. run slicer.py and select any mp4 of your choice.
-3. Run data_generator.py to draw bounding boxes around every face in step 2.
-4. Run face_extractor.py to crop faces and save them in unknown_faces dir.
-5. Run re-id.py to see if there is a match for unknown_faces and anyone in known_faces
+2. Run find_match.py.
+
 
 # Citations
 This project and its code is sourced from open source software. 
