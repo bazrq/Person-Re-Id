@@ -13,11 +13,7 @@ Install the requirements file and do the following:
 - pip install git+https://github.com/ageitgey/face_recognition_models
 
 # Start-up
-Build Database:
 1. Run build_database.py. 
-
-
-Find Missing People:
 2. Run find_match.py.
 
 
